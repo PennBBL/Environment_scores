@@ -106,6 +106,7 @@ address2 <- address %>%
 address.all.list <- address2 %>% 
   group_split(row_number()) 
 
+#Get number of computing cores for parallel processing 
 numCores <- detectCores()
 
 # Link addresses to lat/lon coordinates
